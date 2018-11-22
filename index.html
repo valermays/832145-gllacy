@@ -3,12 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <style>  
+        body {
+          background-color: #849d8f;
+        }
+      </style>
+      <!-- Для себя. Чтобы увидеть, что картинки отображаются -->
   </head>
   <body>
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
     <header class="main-header">
       <nav class="main-navigation">
-        <img src="header-logo.svg" alt="Логотип Глэйси">
+        <!-- <img src="header-logo.svg" alt="Логотип Глэйси"> первый вариант-->
+        <img src="img/logo.png" width="154" height="64" alt="Глейси">
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Доставка и оплата</a></li>
@@ -49,6 +56,7 @@
         <h2 class="blog-news-head">Новое в нашем блоге</h2>
         <a href="blog.html">
         <h3 class="blog-news-name">10 способов сервировки щербетов к столу</h3>
+        <img src="img/fruit-sorbet.jpg">
         </a>
       </article>
       <section class="subscription">
@@ -63,10 +71,18 @@
     </main>
     <footer class="main-footer">
         <ul class="social">
-          <li class="social-item"><a href="#">Твиттер</a></li>
-          <li class="social-item"><a href="#">Инстаграм</a></li>
-          <li class="social-item"><a href="#">Фейсбук</a></li>
-          <li class="social-item"><a href="#">ВКонтакте</a></li>
+          <li class="social-item"><a href="#">
+            <img src="img/twitter.svg" alt="Твиттер">
+          </a></li>
+          <li class="social-item"><a href="#">
+            <img src="img/instagram.svg" alt="Инстаграм">
+          </a></li>
+          <li class="social-item"><a href="#">
+            <img src="img/fb.svg" alt="Фейсбук">
+          </a></li>
+          <li class="social-item"><a href="#">
+              <img src="img/vk.svg" alt="ВКонтакте">
+          </a></li>
         </ul>
         <ul class="footer-info">
           <li class="footer-info-item special"><a href="#">Для поставщиков</a></li>
