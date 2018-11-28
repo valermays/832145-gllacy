@@ -21,16 +21,13 @@
                     <li><a href="#">Доставка и оплата</a></li>
                     <li><a href="#">О компании</a></li>
                 </ul>
-            </nav>
-            <p class="site-search">
-            <!-- Здесь явно что-то должно быть -->
-            </p>
-            <p class="login">
-            <!-- Здесь тоже не особо понимаю -->
-            </p>
-            <p class="basket">
-            <!-- И тут -->
-            </p>
+                <ul class="user-navigation">
+                    <li><button class="search"><img src="img/svg/loupe.svg" alt="Поиск"></button></li>
+                    <!-- Первоначальный вариант<li><a class="login-link" href="login.html">Вход</li> -->
+                    <li><button class="login"><img src="img/svg/entrance.svg" alt="Вход">Вход</button></li>
+                    <li><button class="basket"><img src="img/svg/basket-red.svg" alt="Корзина">2 товара</button></li> 
+                </ul>
+            </nav>   
         </header>
         <main class="container">
             <ul class="breadcrumbs">
@@ -152,16 +149,16 @@
         <footer class="main-footer">
                 <ul class="social">
                     <li class="social-item"><a href="#">
-                        <img src="img/twitter.svg" alt="Твиттер">
+                        <img src="img/svg/twitter.svg" alt="Твиттер">
                         </a></li>
                     <li class="social-item"><a href="#">
-                        <img src="img/instagram.svg" alt="Инстаграм">
+                        <img src="img/svg/instagram.svg" alt="Инстаграм">
                         </a></li>
                     <li class="social-item"><a href="#">
-                        <img src="img/fb.svg" alt="Фейсбук">
+                        <img src="img/svg/fb.svg" alt="Фейсбук">
                         </a></li>
                     <li class="social-item"><a href="#">
-                        <img src="img/vk.svg" alt="ВКонтакте">
+                        <img src="img/svg/vk.svg" alt="ВКонтакте">
                         </a></li>
                 </ul>
             <ul class="footer-info">
@@ -175,5 +172,12 @@
                 <span>Сделано в HTML Academy 2017</span>
             </p>
         </footer>
+        <section class="basket-form">
+            <h2 class="visually-hidden">Корзина</h2>
+            <form class="order" action="#" method="post">
+                <!-- Пока не додумалась, что тут будет -->
+                <button type="submit" class="button">Оформить заказ</button>
+            </form>
+        </section>
     </body>
 </html>
