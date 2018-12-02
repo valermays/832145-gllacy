@@ -17,15 +17,33 @@
         <!-- <img src="header-logo.svg" alt="Логотип Глэйси"> первый вариант-->
         <img src="img/logo.png" width="154" height="64" alt="Логотип магазина Глейси">
         <ul class="site-navigation">
-          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Каталог</a>
+            <ul class="catalog-list">
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фрутовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+          </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><button class="search"><img src="img/svg/loupe.svg" alt="Поиск"></button></li>
-          <!-- Первоначальный вариант<li><a class="login-link" href="login.html">Вход</li> -->
-          <li><button class="login"><img src="img/svg/entrance.svg" alt="Вход">Вход</button></li>
-          <li><button class="basket"><img src="img/svg/basket.svg" alt="Корзина">Пусто</button></li> 
+          <li><a class="search button" href="search.html"><img src="img/svg/loupe.svg" alt="Поиск"></a>
+                <form class="search-form" action="#" method="post">
+                  <label for="search-form" class="visually-hidden">Форма поиска</label>
+                  <input type="search" id="search-form" name="search-form" placeholder="Что ищем?">
+                  </form>
+          </li>
+          <li><a class="login button" href="login.html"><img src="img/svg/entrance.svg" alt="Вход">Вход</a></li>
+          <li><a class="basket button" href="basket.html"><img src="img/svg/basket.svg" alt="Корзина">Пусто</a>
+            <ul class="busket-form">
+                <li>1 позиция</li>
+                <li>2 позиция</li>
+            </ul>
+            <a class="button" href="order.html">Оформить заказ</a>
+          </li> 
         </ul>
       </nav>
     </header>
@@ -92,44 +110,28 @@
         <span>Сделано в HTML Academy 2017</span>
       </p>
     </footer>
-    <section class="modal modal=search">
-      <h2 class="visually-hidden">Форма поиска</h2>
-      <form class="search-form" action="#" method="post">
-        <label for="search-form" class="visually-hidden">Форма поиска</label>
-        <input type="search" id="search-form" name="search-form" placeholder="Что ищем?">
-      </form>
-    </section>
     <section class="modal modal-login">
       <h2 class="visually-hidden">Вход</h2>
       <form class="login-form" action="#" method="post">
         <label for="user-mail" class="visually-hidden">Электронная почта</label>
         <input type="email" id="user-mail" name="user-mail" placeholder="Электронная почта" required>
         <label for="password" class="visually-hidden">Пароль</label>
-        <input type="password" id="password" name="password" placeholder="Пароль" reguired>
-        <!--На атрибут required ругается валидатор, не понимаю почему -->
+        <input type="password" id="password" name="password" placeholder="Пароль" required>
         <button type="submit" class="button">Войти</button>
         <a class="restore" href="#">Забыли пароль?</a>
         <a class="new-user" href="#">Новая регистрация</a>
       </form>  
     </section>
-       <!--Тут я совсем не уверена  -->
-    <ul class="catalog-list">
-      <li><a href="#">Новинки</a></li>
-      <li><a href="#">Сливочное</a></li>
-      <li><a href="#">Щербеты</a></li>
-      <li><a href="#">Фрутовый лед</a></li>
-      <li><a href="#">Мелорин</a></li>
-    </ul>
     <section class="feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="feedback-form" action="#" method="post">
         <p>Мы обязательно вам ответим!</p>
         <label for="user-name" class="visually-hidden">Имя</label>
-        <input type="text" id="user-name" name="name" placeholder="Как вас зовут?">
+        <input type="text" id="user-name" name="name" placeholder="Как вас зовут?" required>
         <label for="email" class="visually-hidden">Электронная почта</label>
-        <input type="email" id="email" name="email" placeholder="Ваша почта для ответа?">
+        <input type="email" id="email" name="email" placeholder="Ваша почта для ответа?" required>
         <label for="feedback-comment" class="visually=hidden">Ваш комментарий</label>
-        <textarea id="feedback-comment" name="feedback-comment" placeholder="Напишите что-нибудь..." rows="6"></textarea>
+        <textarea id="feedback-comment" name="feedback-comment" placeholder="Напишите что-нибудь..." rows="6" required></textarea>
         <button type="submit" class="button">Отправить</button>
       </form>
     </section>
