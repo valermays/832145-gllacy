@@ -1,0 +1,171 @@
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #ffffff;
+
+    background-color: #849d8f;
+}
+
+a {
+    color: #ffffff;
+}
+
+.site-navigation {
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.user-navigation {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.catalog-navigation a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #323232;
+}
+
+.site-navigation,
+.catalog-navigation,
+.user-navigation,
+.basket-form,
+.features-list,
+.breadcrumbs,
+.catalog-list {
+    list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus, 
+.user-navigation a:hover,
+.user-navigation a:focus {
+    color: #323232;
+
+    background-color: #f7f6f3;
+}
+
+.catalog-navigation,
+.basket-form {
+    display: none;
+}
+
+/* .catalog-list a:hover,
+.catalog-list a:focus {
+    background-color: #fbded7;
+}
+
+.catalog-list a:active {
+    background-color: #f6b5a5;
+} */
+
+.features {
+    color: #323232;
+
+    background-color: beige;
+    background-image: url("../img/waffle-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 1146px 306px; */
+}
+
+.features-head {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.blog-news {
+    background-color: white;
+}
+
+.blog-news-head {
+    font-size: 16px;
+    font-weight: 500;
+    color: #323232;
+}
+
+.blog-news a {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #323232;
+}
+
+.subscription {
+    color: #5a5a5a;
+
+    background-color: #f8f7f4;
+    background-size: 549px 211px;
+    /* я пока не додумалась, как сдеалть фон с макета, буду еще пробовать =) */
+}
+
+.button-red {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+
+    color: #ffffff;
+
+    background-color: #e74a35;
+
+    border: none;
+}
+
+.button-red:hover,
+.button-red:focus {
+    background-color: #f28066;
+}
+
+.footer-info {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.footer-info li:first-child {
+    font-weight: 700;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #fefefe;
+}
+
+.breadcrumbs {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.short-contacts {
+    font-weight: 700;
+}
+
+.short-telephone {
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.catalog-item-price {
+    font-size: 45px;
+    line-height: 45px;
+    text-decoration: none;
+}
+
+.catalog-item-weight {
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.catalog-item a {
+    text-decoration: none;
+}
+
+.catalog-item h3 {
+    text-decoration: underline;
+}
